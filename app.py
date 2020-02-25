@@ -118,9 +118,11 @@ def init_pitch_scatter(df, before_after, pitcher, pitch_type):
     fig.update_layout(
         xaxis=dict(showgrid=False, zeroline=False),
         yaxis=dict(showgrid=False, zeroline=False),
-        # autosize=False,
-        # width=500,
-        # height=500,
+        title={
+            'text': before_after.capitalize(),
+            'x': 0.5,
+            'xanchor': 'center'
+        },
         legend=dict(
             orientation='h',
             yanchor='top',
