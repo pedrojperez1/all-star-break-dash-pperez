@@ -4,7 +4,18 @@ This repo contains all the necessary files for maintaining [this dashboard](http
 
 ## Installation
 
-The dashboard is deployed using [Heroku](https://dashboard.heroku.com/apps), so installation is not necessary.
+The dashboard is deployed using [Heroku](https://dashboard.heroku.com/apps), so installation is not necessary. Simply use [this link](https://all-star-break-dash.herokuapp.com/) to access the dashboard.
+
+If the dashboard is offline for any reason, you can run the dashboard locally by:
+
+1. Clone this repo locally
+2. Using Terminal, navigate to the directory that contains your repo and running the following:
+```bash
+$ python app.py
+```
+3. Navigate to ```localhost:8050``` on your preferred browser to access the dashboard
+
+Note: Having Python installed is a requirement for this option.
 
 ## Usage
 
