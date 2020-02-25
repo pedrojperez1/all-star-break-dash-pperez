@@ -6,10 +6,15 @@ from dash.dependencies import Input, Output
 
 import pandas as pd
 import re
+import os
 import numpy as np 
 import plotly.figure_factory as ff
 import plotly.graph_objects as go
 import plotly.express as px
+
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+server = app.server
 
 data = pd.read_csv('C:/Users/pedro/Downloads/ibp_pitcher.csv')
 ##########################################################
@@ -128,9 +133,7 @@ def init_pitch_scatter(df, before_after, pitcher, pitch_type):
 
     return fig
 
-external_stylesheets = [
-    'https://codepen.io/chriddyp/pen/bWLwgP.css'
-]
+
 
 app = dash.Dash(external_stylesheets=external_stylesheets)
 app.layout = html.Div([
