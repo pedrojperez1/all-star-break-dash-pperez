@@ -143,7 +143,7 @@ app.layout = html.Div([
         html.H2('What happened after the All-Star break?')
     ], style={'margin': 'auto', 'text-align': 'center'}),
     html.Div([
-        html.H5('Choose a pitcher to get started...')
+        html.H5('How did pitch selection change before and after the All-Star break? Choose a pitcher to get started.')
     ], style={'margin': 'auto', 'text-align': 'center'}),
     html.Div([
         dcc.Dropdown(
@@ -173,7 +173,7 @@ app.layout = html.Div([
     ], className='row'),
     html.Div([
         html.Div([
-            html.H6('Did placement change for different pitch types?')
+            html.H5('Did placement change for different pitch types?')
         ], style={'margin': 'auto', 'text-align': 'center'}),
         html.Div([
             dcc.Dropdown(
@@ -205,7 +205,7 @@ app.layout = html.Div([
         ], className='row'),
         html.Div([
             html.Div([
-                html.H6('How did distribution of biometric measures change after the break? ')
+                html.H5('How did distribution of biometric measures change after the break? ')
             ], style={'margin': 'auto', 'text-align': 'center'}),
             html.Div([
                 dcc.Dropdown(
