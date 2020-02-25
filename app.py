@@ -16,7 +16,9 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(external_stylesheets=external_stylesheets)
 server = app.server
 
-data = pd.read_csv('C:/Users/pedro/Downloads/ibp_pitcher.csv')
+data_url = 'https://raw.githubusercontent.com/pedrojperez1/all-star-break-dash-pperez/master/ibp_pitcher.csv'
+data = pd.read_csv(data_url, sep=',')
+
 ##########################################################
 # data needs to be cleaned a bit (e.g. bs_count is mistaken for dates)
 ##########################################################
