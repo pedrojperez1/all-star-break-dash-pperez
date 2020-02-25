@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-
+app = dash.Dash(external_stylesheets=external_stylesheets)
 server = app.server
 
 data = pd.read_csv('C:/Users/pedro/Downloads/ibp_pitcher.csv')
@@ -134,8 +134,6 @@ def init_pitch_scatter(df, before_after, pitcher, pitch_type):
     return fig
 
 
-
-app = dash.Dash(external_stylesheets=external_stylesheets)
 app.layout = html.Div([
     html.Div([
         html.H2('What happened after the All-Star break?')
