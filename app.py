@@ -7,7 +7,7 @@ from dash.dependencies import Input, Output
 import pandas as pd
 import re
 import os
-import numpy as np 
+import numpy as np
 import plotly.figure_factory as ff
 import plotly.graph_objects as go
 import plotly.express as px
